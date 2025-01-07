@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .froms import ApplicationForm
 from .models import Form
-
+from django.contrib import messages
 
 def index(request):
     if request.method == "POST":
@@ -15,6 +15,7 @@ def index(request):
 
             Form.objects.create(first_name=first_name, last_name=last_name, 
                                 email=email, date=date, occupation=occupation)
+            messages.success(request, f"{first_name}, your form was submitted successfully!")
 
     return render(request, "index.html")
 
