@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="mt-4 mb-4">Contact Us</h1>
+    <p>Welcome to the PythonHow Contact page. Feel free to reach out to us through the following details:</p>
+
+    <h3>Our Offices</h3>
+    <ul>
+        <li><strong>Head Office:</strong> 123 Python Street, Coding City, Devland</li>
+        <li><strong>Branch Office:</strong> 456 Django Avenue, Framework Town, Webland</li>
+    </ul>
+
+    {% load static %}
+    <img src="{% static 'images/image.png' %}" alt="Our Office" class="img-fluid rounded mb-4" style="max-width: 300px;">
+
+    <h3>Business Hours</h3>
+    <p>
+        <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+        <strong>Saturday:</strong> 10:00 AM - 4:00 PM<br>
+        <strong>Sunday:</strong> Closed
+    </p>
+
+    <h3>Contact Information</h3>
+    <p>
+        <strong>Phone:</strong> +1 (234) 567-8901<br>
+        <strong>Email:</strong> contact@pythonhow.com
+    </p>
+
+    <h3>Social Media</h3>
+    <p>
+        Follow us on our social media channels for updates and news:
+        <ul>
+            <li><a href="https://facebook.com/pythonhow" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/pythonhow" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com/company/pythonhow" target="_blank">LinkedIn</a></li>
+        </ul>
+    </p>
+{% endblock %}
